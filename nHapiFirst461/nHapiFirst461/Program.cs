@@ -45,11 +45,13 @@ namespace nHapiFirst461
                 //+ "OBR|0||T09-100442-RET-0^^OLIS_Site_ID^ISO|RET^RETICULOCYTE COUNT^HL79901 literal|||200905011106|||||||200905011106||OLIST^BLAKE^DONALD^THOR^^^^L^921379||7870279|7870279|T09-100442|MOHLTC|200905011130||B7|F||1^^^200905011106^^R\r"
                 //+ "OBX|1|ST|||Test Value";
 
-                string firstMessage = @"MSH|^~\&|SENDING|SENDER|RECV|INST|20060228155525||QRY^R02|1234567890|P|2.3|\r"
-                + "QRD|20060228155525|2|3|4|5|6|7|8|9|10|11|12|\r"
-                + "QRF||||||||";
-               // + "QRD|20060228155525|R|I|x|x|x|x|10^RD&Records&0126|38923^^^^^^^^&INST|x|x|";
-               //+"QRD|20060228155525|R|I|||||10^RD&Records&0126|38923^^^^^^^^&INST|||";
+                //string firstMessage = @"MSH|^~\&|SENDING|SENDER|RECV|INST|20060228155525||QRY^R02|1234567890|P|2.3| "
+                //+ @" QRD|20060228155525|2|3|4|5|6|7|8|9|10|11|12| "
+                //+ @" QRF|||||||| ";
+                // + "QRD|20060228155525|R|I|x|x|x|x|10^RD&Records&0126|38923^^^^^^^^&INST|x|x|";
+                //+"QRD|20060228155525|R|I|||||10^RD&Records&0126|38923^^^^^^^^&INST|||";
+
+                string firstMessage = @"MSH|^ ~\&|KIS||CommServer||200811111017||QRY^R02|987654321|P|2.3|\r QRD|200811111016|R|I|Q1004|||1^RD|10000437363|DEM|||";
 
                 PipeParser parser = new PipeParser();
                 IMessage mv23 = parser.Parse(firstMessage);
@@ -111,6 +113,8 @@ namespace nHapiFirst461
                 **/
 
                 Console.WriteLine(firstMessage);
+                //qryR02.QRD.QueryDateTime.TimeOfAnEvent.Value = "20060228155525";
+                //qryR02.QRD.QueryID.Value = "M";
 
                
                 Console.WriteLine("MSH      MessageType.MessageType               {0}", qryR02.MSH.MessageType.MessageType.Value);

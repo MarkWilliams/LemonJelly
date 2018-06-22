@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nHapiFirst461", "nHapiFirst461\nHapiFirst461.csproj", "{180C022E-469B-48CC-A66A-2CCCC03F50F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nHapiSecond", "nHapiSecond\nHapiSecond.csproj", "{B2A8D716-A4D1-4E90-B833-33010F335614}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{180C022E-469B-48CC-A66A-2CCCC03F50F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{180C022E-469B-48CC-A66A-2CCCC03F50F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{180C022E-469B-48CC-A66A-2CCCC03F50F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A8D716-A4D1-4E90-B833-33010F335614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A8D716-A4D1-4E90-B833-33010F335614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A8D716-A4D1-4E90-B833-33010F335614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A8D716-A4D1-4E90-B833-33010F335614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
